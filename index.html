@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07000f">
+  <title>BAGAI35 — Personal Portfolio</title>
+
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div class="grid-bg"></div>
+  <div class="stars"></div>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand glitch-mini" href="#home" data-text="BAGAI35">BAGAI35</a>
+      <button class="navbar-toggler neon-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#about">ABOUT ME</a>
+          <a class="nav-link" href="#projects">PROJECTS</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <div class="hero-photo-wrap reveal">
+          <div class="photo-frame">
+            <img src="assets/avatar.jpg" alt="My photo" class="profile-photo"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')">
+            <div class="placeholder-text">YOUR<br>PHOTO</div>
+            <div class="photo-corner corner-tl"></div>
+            <div class="photo-corner corner-tr"></div>
+            <div class="photo-corner corner-bl"></div>
+            <div class="photo-corner corner-br"></div>
+          </div>
+          <div class="status"><span class="status-dot"></span> ONLINE</div>
+        </div>
+
+        <div class="hero-copy reveal">
+          <div class="eyebrow">// WELCOME TO MY DIGITAL SPACE</div>
+          <h1 class="mega-name glitch" data-text="BAGAI35">BAGAI35</h1>
+          <div class="role">SOFTWARE DEVELOPER <span>/</span> TECHNICIAN</div>
+          <p class="lead-text">
+            Code. Servers. Networks. Web.
+            <br>
+            I build things and make them work.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="neon-btn primary-btn">
+              <span>VIEW PROJECTS</span><i class="bi bi-arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="neon-btn">
+              <span>CONTACT ME</span><i class="bi bi-terminal"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="bi bi-chevron-double-down"></i>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="section-heading reveal">
+        <div class="section-number">01</div>
+        <div>
+          <div class="eyebrow">// WHO AM I?</div>
+          <h2>ABOUT <span>ME</span></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="terminal-card reveal">
+          <div class="terminal-top">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-title">bagai35@server:~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal-value">software_developer</p>
+            <p><span class="prompt">$</span> location</p>
+            <p class="terminal-value">Estonia</p>
+            <p><span class="prompt">$</span> interests</p>
+            <p class="terminal-value">web · linux · servers · networks</p>
+            <p><span class="prompt">$</span> status</p>
+            <p class="terminal-value online">available_for_projects<span class="cursor">_</span></p>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p>
+            Привет! Я <strong>Bagai35</strong> — разработчик и техник, которому
+            нравится разбираться в том, как всё работает внутри.
+          </p>
+          <p>
+            Работаю с веб-разработкой, Linux-серверами, сетями, базами данных
+            и автоматизацией. Люблю превращать идею в работающий проект —
+            от первого HTML-файла до развёрнутого сервера.
+          </p>
+
+          <div class="skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>TypeScript</span><span>React</span><span>Next.js</span>
+            <span>Node.js</span><span>Python</span><span>Java</span>
+            <span>MySQL</span><span>MongoDB</span><span>Linux</span>
+            <span>Docker</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <div class="section-heading reveal">
+        <div class="section-number">02</div>
+        <div>
+          <div class="eyebrow">// SELECTED WORK</div>
+          <h2>PRO<span>JECTS</span></h2>
+        </div>
+      </div>
+
+      <!-- <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-icon"><i class="bi bi-window-stack"></i></div>
+            <h3>MANILLA</h3>
+            <p>Web application with a modern frontend, backend logic and database integration.</p>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>DB</span></div>
+            <a href="#" class="project-link">EXPLORE <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div> -->
+
+        <div class="col-lg-4 reveal">
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
+            <h3>HOME LAB</h3>
+            <p>Personal server infrastructure with Linux, networking, containers and self-hosted services.</p>
+            <div class="tags"><span>Linux</span><span>Docker</span><span>Nginx</span></div>
+            <a href="#" class="project-link">EXPLORE <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+<!-- 
+        <div class="col-lg-4 reveal">
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>WEB PROJECTS</h3>
+            <p>A collection of websites, experiments and small tools built while learning and creating.</p>
+            <div class="tags"><span>React</span><span>Python</span><span>JS</span></div>
+            <a href="#" class="project-link">EXPLORE <i class="bi bi-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <div class="contact-box reveal">
+        <div class="eyebrow">// ESTABLISH CONNECTION</div>
+        <h2>LET'S <span>CONNECT</span></h2>
+        <p>Если хочешь связаться со мной или обсудить проект — пиши.</p>
+
+        <div class="socials">
+          <a href="https://t.me/bagai35" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-telegram"></i><span>TELEGRAM</span><small>@bagai35</small>
+          </a>
+          <a href="https://instagram.com/bagai_35" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-instagram"></i><span>INSTAGRAM</span><small>@bagai_35</small>
+          </a>
+          <a href="https://discord.com/users/bagai35" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-discord"></i><span>DISCORD</span><small>@bagai35</small>
+          </a>
+          <a href="https://github.com/bagai35" class="social-btn" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i><span>GITHUB</span><small>@bagai35</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>BAGAI35</span>
+    <span>ESTONIA</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width - .5) * 8;
+        const y = ((e.clientY - r.top) / r.height - .5) * -8;
+        card.style.transform = `perspective(700px) rotateX(${y}deg) rotateY(${x}deg) translateY(-5px)`;
+      });
+      card.addEventListener('mouseleave', () => card.style.transform = '');
+    });
+  </script>
+</body>
+</html>
